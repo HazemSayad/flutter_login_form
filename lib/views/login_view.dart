@@ -34,8 +34,22 @@ class _LoginViewState extends State<LoginView> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const TextField(),
-          const TextField(),
+          TextField(
+            autocorrect: false,
+            enableSuggestions: false,
+            keyboardType: TextInputType.emailAddress,
+            controller: _email,
+            decoration: const InputDecoration(
+                hintText: "Enter Email Address",
+                icon: Icon(Icons.email_rounded)),
+          ),
+          TextField(
+              obscureText: true,
+              autocorrect: false,
+              enableSuggestions: false,
+              controller: _password,
+              decoration: const InputDecoration(
+                  hintText: "Enter Password", icon: Icon(Icons.password))),
           TextButton(onPressed: () {}, child: const Text("Log in"))
         ],
       ),
