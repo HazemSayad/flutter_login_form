@@ -32,7 +32,7 @@ class _SignupViewState extends State<SignupView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Login View")),
+      appBar: AppBar(title: const Text("Signup View")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
