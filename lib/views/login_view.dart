@@ -48,7 +48,11 @@ class _LoginViewState extends State<LoginView> {
               controller: _password,
               decoration: const InputDecoration(
                   hintText: "Enter Password", icon: Icon(Icons.password))),
-          TextButton(onPressed: () {}, child: const Text("Log in"))
+          TextButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed("/homepage/");
+              },
+              child: const Text("Log in"))
         ],
       ),
     );
