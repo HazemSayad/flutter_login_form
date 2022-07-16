@@ -10,14 +10,12 @@ class FirstTimePage extends StatelessWidget {
       body: Column(children: [
         TextButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamedAndRemoveUntil("/login/", (route) => false);
+              Navigator.of(context).pushNamed("/login/");
             },
             child: const Text("Log in")),
         TextButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamedAndRemoveUntil("/signup/", (route) => false);
+              Navigator.of(context).pushNamed("/signup/");
             },
             child: const Text("Sign up"))
       ]),

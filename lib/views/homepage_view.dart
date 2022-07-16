@@ -10,9 +10,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Home Page")),
       body: Column(
-        children: const [
-          Center(child: Text("Home Page Body")),
-          CircularProgressIndicator()
+        children: [
+          const Center(child: Text("Home Page Body")),
+          const CircularProgressIndicator(),
+          TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text("Log out"))
         ],
       ),
     );

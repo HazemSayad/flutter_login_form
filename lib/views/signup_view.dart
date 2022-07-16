@@ -57,7 +57,11 @@ class _SignupViewState extends State<SignupView> {
               controller: _cPassword,
               decoration: const InputDecoration(
                   hintText: "Confirm Password", icon: Icon(Icons.check))),
-          TextButton(onPressed: () {}, child: const Text("Sign up"))
+          TextButton(
+              onPressed: () {
+                Navigator.of(context).popAndPushNamed("/login/");
+              },
+              child: const Text("Sign up"))
         ],
       ),
     );

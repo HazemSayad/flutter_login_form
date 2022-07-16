@@ -18,6 +18,9 @@ void main() {
       },
       "/homepage/": (context) {
         return const HomePage();
+      },
+      "/firstTimePage/": (context) {
+        return const FirstTimePage();
       }
     },
     theme: ThemeData(primarySwatch: Colors.deepPurple),
