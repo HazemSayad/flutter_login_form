@@ -15,6 +15,9 @@ void main() {
       },
       "/signup/": (context) {
         return const SignupView();
+      },
+      "/homepage/": (context) {
+        return const HomePage();
       }
     },
     theme: ThemeData(primarySwatch: Colors.deepPurple),
