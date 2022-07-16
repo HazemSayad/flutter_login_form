@@ -6,7 +6,7 @@ void main() {
   bool isFirstTime = true;
 
   runApp(MaterialApp(
-    title: "Welcome!",
+    title: "Flutter App",
     theme: ThemeData(primarySwatch: Colors.deepPurple),
     home: isFirstTime ? const FirstTimePage() : const HomePage(),
   ));
